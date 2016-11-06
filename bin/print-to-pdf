@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+const shell = require('shelljs');
+const [execPath, filename, ...args] = process.argv;
+
+shell.exec(`${__dirname}/../node_modules/.bin/electron . ${args.join(' ')}`);

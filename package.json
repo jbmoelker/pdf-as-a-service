@@ -1,0 +1,28 @@
+{
+  "name": "pdf-as-a-service",
+  "version": "1.0.0",
+  "description": "Print and download a web page as PDF.",
+  "keywords": ["PDF", "print", "download", "export", "Chrome", "Chromium"],
+  "author": "Jasper Moelker <jasper@voorhoede.nl> (https://voorhoede.nl/)",
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "print-to-pdf": "bin/print-to-pdf"
+  },
+  "scripts": {
+    "example:voorhoede": "bin/print-to-pdf https://www.voorhoede.nl --output voorhoede.pdf",
+    "start": "nodemon ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bluebird": "3.4.6",
+    "commander": "2.9.0",
+    "electron": "1.4.5",
+    "express": "4.14.0",
+    "mkdirp": "0.5.1",
+    "shelljs": "0.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0"
+  }
+}
